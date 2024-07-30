@@ -20,7 +20,7 @@ const FlightStatus = () => {
       <ul>
         {flights.map(flight => (
           <li key={flight.id}>
-            {flight.airline} - {flight.status} - Gate: {flight.gate}
+            {flight.airline} - {flight.flightId} - {flight.status} - Departure Gate: {flight.departureGate} - Arrival Gate: {flight.arrivalGate}
           </li>
         ))}
       </ul>
